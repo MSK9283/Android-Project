@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4EA1E3"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/main_settings"
+        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_baseline_settings_24"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_margin="24dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/main_TodaysQuiz"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_above="@id/main_weeklychart"
+        android:backgroundTint="#FBFBFB"
+        android:text="TAKE TODAY'S QUIZ"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_margin="24dp"
+        android:id="@+id/main_weeklychart"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FBFBFB"
+        android:text="VIEW LAST WEEK'S CHART"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_margin="24dp"
+        android:id="@+id/main_Yesterdaysquiz"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/main_weeklychart"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FBFBFB"
+        android:text="VIEW YESTERDAY'S CHART"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+</RelativeLayout>
