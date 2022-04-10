@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umore">
         <activity
+            android:name=".Yesterdays_chart"
+            android:exported="false" />
+        <activity
+            android:name=".Last_Weeks_Chart"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".SpalshActivity"
             android:exported="true">
             <intent-filter>
@@ -20,9 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

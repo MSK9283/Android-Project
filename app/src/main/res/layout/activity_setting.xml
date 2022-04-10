@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4EA1E3"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/setting_backbutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/setting_DailyQuizTime"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_above="@+id/setting_workWeek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FBFBFB"
+        android:text="SET DAILY QUIZ TIME"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/setting_workWeek"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FBFBFB"
+        android:text="SET WORK WEEK"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/setting_workDay"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/setting_workWeek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FBFBFB"
+        android:text="SET WORK DAY"
+        android:textColor="#100F0F"
+        android:textSize="24sp" />
+</RelativeLayout>

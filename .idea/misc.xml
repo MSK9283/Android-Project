@@ -5,8 +5,11 @@
       <map>
         <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/drawable/custom_button.xml" value="0.1665" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.236" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_last_weeks_chart.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_setting.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_spalsh.xml" value="0.25" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/activity_yesterdays_chart.xml" value="0.1" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Umore/app/src/main/res/layout/fragment_quiz_question.xml" value="0.125" />
       </map>
     </option>
