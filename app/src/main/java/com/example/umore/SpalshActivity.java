@@ -1,11 +1,17 @@
 package com.example.umore;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
+
+import com.google.android.material.slider.RangeSlider;
+import com.google.android.material.slider.Slider;
 
 public class SpalshActivity extends AppCompatActivity {
 
@@ -17,6 +23,7 @@ public class SpalshActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // hide the title bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_spalsh);
+
 
         Thread thread = new Thread(){
             public void run(){
@@ -32,6 +39,9 @@ public class SpalshActivity extends AppCompatActivity {
                 }
             }
         };thread.start();
+
+
+
 
     }
 }

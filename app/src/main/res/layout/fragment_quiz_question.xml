@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
     tools:context=".QuizQuestion">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:id="@+id/question_Time"
+        android:id="@+id/question_TimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="Insert time here"
+        android:textSize="24dp" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/question_TimeSlider"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:layout_below="@+id/question_TimeSlider"
+        android:id="@+id/question_TimeScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Insert Score here"
+        android:textSize="16dp" />
 
 
-</FrameLayout>
+</RelativeLayout>

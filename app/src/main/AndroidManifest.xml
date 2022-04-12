@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Umore">
         <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".Yesterdays_chart"
             android:exported="false" />
         <activity

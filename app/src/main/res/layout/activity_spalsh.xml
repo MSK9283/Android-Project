@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#4EA1E3"
     tools:context=".SpalshActivity">
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
@@ -24,4 +23,7 @@
         android:textColor="#FBFBFB"
         android:textSize="34sp"
         android:textStyle="bold|italic" />
+
+
+
 </RelativeLayout>
