@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView setting_button;
     Button button_LastWeeksChart;
     Button button_YesterdaysChart;
+    Button button_dailyQuiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setting_button = findViewById(R.id.main_settings);
         button_LastWeeksChart = findViewById(R.id.main_weeklychart);
         button_YesterdaysChart = findViewById(R.id.main_Yesterdayschart);
-
+        button_dailyQuiz = findViewById(R.id.main_TodaysQuiz);
         setting_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        button_dailyQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         button_LastWeeksChart.setOnClickListener(new View.OnClickListener() {
             @Override

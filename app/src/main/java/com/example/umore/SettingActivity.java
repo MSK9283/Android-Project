@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class SettingActivity extends AppCompatActivity {
     ImageView back_button;
+    Button setDailyQuizTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,16 @@ public class SettingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_setting);
 
         back_button = findViewById(R.id.setting_backbutton);
+        setDailyQuizTime = findViewById(R.id.setting_DailyQuizTime);
+
+        setDailyQuizTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SetDailyQuizTime temp = new SetDailyQuizTime();
+                temp.show(getSupportFragmentManager(), "Edit Notification Time");
+            }
+        });
+
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

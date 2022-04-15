@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link QuizQuestion#newInstance} factory method to
+ * Use the {@link SetWorkWeek#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class QuizQuestion extends Fragment {
+public class SetWorkWeek extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class QuizQuestion extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public QuizQuestion() {
+    public SetWorkWeek() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class QuizQuestion extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment QuizQuestion.
+     * @return A new instance of fragment SetWorkWeek.
      */
     // TODO: Rename and change types and number of parameters
-    public static QuizQuestion newInstance(String param1, String param2) {
-        QuizQuestion fragment = new QuizQuestion();
+    public static SetWorkWeek newInstance(String param1, String param2) {
+        SetWorkWeek fragment = new SetWorkWeek();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class QuizQuestion extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quiz_question, container, false);
+        return inflater.inflate(R.layout.fragment_set_work_week, container, false);
     }
 }

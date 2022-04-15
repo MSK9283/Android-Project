@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
-    tools:context=".QuizQuestion">
+    app:cardCornerRadius="16dp">
 
-
-    <TextView
-        android:id="@+id/question_TimeLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"
-        android:text="Insert time here"
-        android:textSize="24dp" />
-
-    <com.google.android.material.slider.RangeSlider
-        android:id="@+id/question_TimeSlider"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_below="@+id/question_TimeSlider"
-        android:id="@+id/question_TimeScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:text="Insert Score here"
-        android:textSize="16dp" />
+        <TextView
+            android:id="@+id/question_TimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:text="Insert time here"
+            android:textSize="24dp" />
+
+        <com.google.android.material.slider.RangeSlider
+
+            android:id="@+id/question_TimeSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:id="@+id/question_TimeScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_TimeSlider"
+            android:layout_margin="16dp"
+            android:text="Insert Score here"
+            android:textSize="16dp" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
