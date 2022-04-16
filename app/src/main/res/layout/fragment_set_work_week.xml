@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
     tools:context=".SetWorkWeek">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+
+        <TimePicker
+            android:id="@+id/fromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/label"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="24dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TO" />
+
+        <TimePicker
+            android:id="@+id/toTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="24dp"
+            android:timePickerMode="spinner" />
+
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toTime"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:backgroundTint="#4EA1E3"
+            android:text="CONFIRM" />
+
+        <Button
+            android:id="@+id/cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toTime"
+            android:layout_margin="16dp"
+            android:layout_toLeftOf="@id/confirm_button"
+            android:backgroundTint="#4EA1E3"
+            android:text="CANCEL" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

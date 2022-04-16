@@ -33,6 +33,20 @@ public class SettingActivity extends AppCompatActivity {
                 temp.show(getSupportFragmentManager(), "Edit Notification Time");
             }
         });
+        setDailyQuizTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SetWorkWeek temp = new SetWorkWeek();
+                temp.show(getSupportFragmentManager(), "Edit Notification Time");
+            }
+        });
+        setDailyQuizTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SetWorkDay temp = new SetWorkDay();
+                temp.show(getSupportFragmentManager(), "Edit Notification Time");
+            }
+        });
 
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override

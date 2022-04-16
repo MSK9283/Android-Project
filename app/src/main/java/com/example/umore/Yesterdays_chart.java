@@ -32,4 +32,8 @@ public class Yesterdays_chart extends AppCompatActivity {
             }
         });
     }
+
+    public void displayChart(){
+
+    }
 }
